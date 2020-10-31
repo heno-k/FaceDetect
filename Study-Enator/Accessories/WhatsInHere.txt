@@ -1,0 +1,1 @@
+This folder is where the weights, model and deploy prototxt will reside. It will also contain sample images so that I can test to see if detect faces works.
