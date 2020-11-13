@@ -8,7 +8,7 @@ import imutils
 import time
 from imutils.video import VideoStream
 
-Input_type = ImSrc.VideoStream
+Input_type = ImSrc.WebCamVideoStream
 
 path_to_file = 'C:/Users/Henok/source/repos/Study-Enator/Study-Enator/Accessories/'
 prototxt_path = path_to_file + 'deploy.prototxt'
@@ -23,12 +23,16 @@ if(Input_type == ImSrc.ImageFile):
 net = cv2.dnn.readNetFromCaffe(prototxt_path, model_path)  
 
 #Generate the blob depending on the input types (ImageFile, VidFile, VidStream)
-if(Input_type == ImSrc.VideoStream):
+if(Input_type == ImSrc.WebCamVideoStream or Input_type == ImSrc.PiVideoStream):
     #initialize the video stream and allow the camera sensor to warm up
     print("[INFO] starting video stream...")
-    https_url = "http://raspberrypi:8080/?action=stream"
-    vs = VideoStream(https_url).start()
-    time.sleep(2.0)
+    if(Input_type == ImSrc.PiVideoStream):
+        https_url = "http://raspberrypi:8080/?action=stream"
+        vs = VideoStream(https_url).start()
+        time.sleep(2.0)
+    elif(Input_type == ImSrc.WebCamVideoStream):
+        vs = VideoStream(src=0).start()
+        time.sleep(2.0)
 
     # loop over the frames from the video stream
     while True:

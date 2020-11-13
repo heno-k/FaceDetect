@@ -5,7 +5,8 @@ from enum import Enum
 class ImSrc(Enum):
     ImageFile   = 0
     VideoFile   = 1
-    VideoStream = 2
+    PiVideoStream = 2
+    WebCamVideoStream = 3
 
 
 

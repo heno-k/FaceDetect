@@ -27,13 +27,20 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="main.py" />
+    <Compile Include="NeuralNet\HenokNet.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="CameraInterface\" />
     <Folder Include="Accessories\" />
+    <Folder Include="NeuralNet\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Accessories\WhatsInHere.txt" />
+    <Content Include="NeuralNet\TextFile1.txt">
+      <Publish>True</Publish>
+    </Content>
     <Content Include="README.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
