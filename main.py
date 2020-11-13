@@ -10,7 +10,7 @@ from imutils.video import VideoStream
 
 Input_type = ImSrc.WebCamVideoStream
 
-path_to_file = 'C:/Users/Henok/source/repos/Study-Enator/Accessories/'
+path_to_file = 'C:/Users/Henok/source/repos/FaceDetect/Accessories/'
 prototxt_path = path_to_file + 'deploy.prototxt'
 model_path = path_to_file + 'res10_300x300_ssd_iter_140000_fp16.caffemodel'
 weights_path = path_to_file + 'opencv_face_detector_uint8.pb'
