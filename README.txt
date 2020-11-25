@@ -7,6 +7,8 @@ into X parts.
 1) Use tutorial code that utilizes a neural network to detect faces in images
 2) Apply that tutorial code to the live feed video coming from my raspberry pi
 3) Detect my face in video with the raspberry pi
-4) Retrain the deep learning model to detect how focused I am rather than my face
+  i) Purchased a webcam and can now feed video feed from either PiCamera or Webcam
+4) Retrain the deep learning model to detect how focused I am rather than my face (In Progress)
+  i) Currently learning how to train models in my other repo (PaperImplementations)
 
-Credit for facial detection code goes to Adrian Rosebrock from pyimagesearch.com
+Credit for the code placing box around face from detections goes to Adrian Rosebrock from pyimagesearch.com
