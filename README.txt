@@ -2,7 +2,7 @@ This project is a long term goal that will eventually analyze how focused I am
 while studying. I have attached a camera module onto my raspberry pi and it will feed live video as input
 to a neural network that will make an inference as to whether or not I am putting forth quality effort while seated.
 This project requires me to learn how to train a neural network to detect certain motions. I have decided to break this project
-into X parts. 
+into 4 parts. 
 
 1) Use tutorial code that utilizes a neural network to detect faces in images
 2) Apply that tutorial code to the live feed video coming from my raspberry pi
